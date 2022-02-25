@@ -22,7 +22,7 @@
   <%= submit_tag('Submit') %>
 <% end %> -->
 
-<%= form_with url: users_path do |form| %>
+<%= form_with model: @user do |form| %>
   <%= form.label :username %>
   <%= form.text_field :username%><br>
   <%= form.label :email%>
